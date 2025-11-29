@@ -10,4 +10,5 @@ public class MenuCollection : MonoBehaviour
 
     [Header("Others")]
     public GameObject exitPopUp;
+    public GameObject contactPopUp;
 }

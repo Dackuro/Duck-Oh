@@ -112,4 +112,23 @@ public class MainMenu : MonoBehaviour
         collection.exitPopUp.SetActive(false);
     }
     #endregion
+
+    #region Contact
+    public void PopUpContact()
+    {
+        bool isActive = collection.contactPopUp.activeSelf;
+        collection.contactPopUp.SetActive(!isActive);
+    }
+
+    public void OpenURL(string url)
+    {
+        Application.OpenURL(url);
+        collection.contactPopUp.SetActive(false);
+    }
+
+    public void CancelURL()
+    {
+        collection.contactPopUp.SetActive(false);
+    }
+    #endregion
 }
